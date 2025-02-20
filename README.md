@@ -17,7 +17,7 @@ when you run `pod try GoogleNavigation`. To use this project:
 ```
 $ cd GoogleNavigation
 $ pod install
-$ open GoogleNavigationSwiftDemos.xcworkspace
+$ open GoogleNavSwiftXCFrameworkDemos.xcworkspace
 ```
 
 You will need to add an API Key to `GoogleNavigation/GoogleNavSwiftXCFrameworkDemos/Swift/SDKDemoAPIKey.swift`. Please see the
@@ -29,7 +29,7 @@ https://developers.google.com/maps/documentation/navigation/ios-sdk
 
 ## Contributing
 
-Please see CONTRIBUTING.md.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Terms of Service
 
