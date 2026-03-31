@@ -33,21 +33,13 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v4
     
-        - name: Install CocoaPods
-          run: |
-              sudo gem install cocoapods
-    
-        - name: Run pod install
-          run: |
-              pod install --project-directory=GoogleNavigation/
-    
         - name: Build project
           run: |
             echo "Replacing #error for API key"
             sed -i .prev '/#error/'d GoogleNavigation/GoogleNavSwiftXCFrameworkDemos/Swift/SDKDemoAPIKey.swift
     
             echo "Building"
-            xcodebuild -workspace GoogleNavigation/GoogleNavSwiftXCFrameworkDemos.xcworkspace \
+            xcodebuild -project GoogleNavigation/GoogleNavSwiftXCFrameworkDemos.xcodeproj \
             -scheme GoogleNavSwiftXCFrameworkDemos \
             -destination 'platform=iOS Simulator,OS=17.4,name=iPhone 15' build | xcpretty
   

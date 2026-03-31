@@ -11,13 +11,11 @@ audience. You'll also need Xcode 15.0 or later. If you're new to the API, please
 
 ## Installation
 
-The `GoogleNavigation` folder contains the Swift sample code that is downloaded
-when you run `pod try GoogleNavigation`. To use this project:
+The `GoogleNavigation` folder contains the Swift sample code. To use this project:
 
 ```
 $ cd GoogleNavigation
-$ pod install
-$ open GoogleNavSwiftXCFrameworkDemos.xcworkspace
+$ open GoogleNavSwiftXCFrameworkDemos.xcodeproj
 ```
 
 You will need to add an API Key to `GoogleNavigation/GoogleNavSwiftXCFrameworkDemos/Swift/SDKDemoAPIKey.swift`. Please see the
